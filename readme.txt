@@ -1,0 +1,1 @@
+原生 javascript 完成的弹出框用来替代浏览器默认的 alert 和 confirm。
