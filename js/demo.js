@@ -12,4 +12,24 @@ define(function(require, exports, module) {
 	function fixedBug100() {
 		alert('修复bug100');
 	}
+	
+	function conDemo() {
+		//继续在master上修改我的代码！
+	}
+	
+	function conDemo2() {
+		//继续在master上修改我的代码！
+	}
+	
+	function conDemo3() {
+		//继续在master上修改我的代码！
+	}
+	
+	function conDemo4() {
+		//继续在master上修改我的代码！
+	}
+	
+	function conDemo5() {
+		//继续在master上修改我的代码！
+	}
 });
