@@ -12,7 +12,6 @@ define(function(require, exports, module) {
 	function fixedBug100() {
 		alert('修复bug100');
 	}
-<<<<<<< HEAD
 	
 	function conDemo() {
 		//继续在master上修改我的代码！
@@ -32,7 +31,7 @@ define(function(require, exports, module) {
 	
 	function conDemo5() {
 		//继续在master上修改我的代码！
-=======
+	}
 
 	/**
 	 * 修改bug 101
@@ -47,6 +46,5 @@ define(function(require, exports, module) {
 	
 	function fixedBug101_3() {
 		alert('fixed bug 101_3');
->>>>>>> refs/heads/bug101
 	}
 });
