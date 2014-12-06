@@ -1,5 +1,5 @@
 define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
-
+	//这里是别人的代码，目的是出现冲突
 	function Window() {
 		this.cfg = {
 			left: 0,
@@ -40,7 +40,7 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 				this._mask = $('<div class = "window_mask"></div>');
 				this._mask.appendTo("body");
 			}
-
+			///*这里是别人的代码，目的是出现冲突*/
 			if (this.cfg.hasCloseBtn) {
 				var closeBtn = $('<span class="window_closeBtn">X</span > ');
 				//把关闭按钮添加到header中（其实添加在最外层的盒子中也行）
@@ -85,6 +85,10 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 			if (this.cfg.fn4CancelBtn) {
 				this.on("cancel", this.cfg.fn4CancelBtn);
 			}
+		},
+		houzhiqing: function(){
+			/*这里是别人的代码，目的是出现冲突*/
+			$("body").append('<input type="text" vlaue="" id="bebuble"/>');
 		},
 		syncUI: function() {
 			this.boundingBox.css({
