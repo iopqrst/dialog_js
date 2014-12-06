@@ -6,6 +6,10 @@
 	background: #ff00ef;
 	text-align: left;
 }
+.skin_blue .houzhiqing {
+	/*这里是别人的代码，目的是出现冲突*/
+	font-size:20px;
+}
 .skin_blue .window_body {
 	font-family: "微软雅黑";
 	font-size: 25px;
