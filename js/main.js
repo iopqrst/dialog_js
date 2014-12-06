@@ -1,3 +1,6 @@
+/**
+ * require branch develop100_1的分支
+ */
 require.config({
 	paths: {
 		jquery: 'jquery-1.11.0',
