@@ -34,7 +34,7 @@ define(function(require, exports, module) {
 	}
 
 	/**
-	 * 修改bug 101
+	 * 修改 branch develop 100 2
 	 */
 	function fixedBug101() {
 		alert('fixed bug 101');
