@@ -1,6 +1,3 @@
-/**
- * //$UI其实没有什么作用，仅仅为了require引入参数能对应上
- */
 define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 
 	function Window() {
