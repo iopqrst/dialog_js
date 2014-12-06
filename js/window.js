@@ -1,3 +1,4 @@
+//develop100_1分支新增代码
 define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 
 	function Window() {
@@ -21,6 +22,8 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 			fn4CancelBtn: function() {}
 		}
 	}
+	
+	//
 
 	Window.prototype = $.extend({}, new widget.Widget(), {
 		renderUI: function() {
@@ -32,6 +35,8 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 					break;
 				case "confirm":
 					footerContent = '<input type="button" value="' + this.cfg.btn4Confirm + '" class="window_confirmBtn"/><input type="button" value="' + this.cfg.btn4Cancel + '" class="window_cancelBtn"/>';
+				case "propm":
+					footerContent = '<input type="text" value=""/>'; //branch_develop100_1 添加代码
 			}
 
 			this.boundingBox = $('<div class="window_boundingBox">' + '<div class="window_header">' + this.cfg.title + '</div>' + '<div class="window_body">' + this.cfg.content + '</div>' + '<div class = "window_footer">' + footerContent + '</div></div>');
@@ -46,7 +51,7 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 				//把关闭按钮添加到header中（其实添加在最外层的盒子中也行）
 				closeBtn.appendTo(this.boundingBox.find('.window_header '));
 			}
-
+			//branch develop100_1 分支添加代码
 			this.boundingBox.appendTo(document.body);
 		},
 		bindUI: function() {
@@ -59,10 +64,10 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 				that.fire("confirm");
 				that.destory();
 			}).delegate(".window_cancelBtn", "click", function() {
-				that.fire("cancel");
-				that.destory();
+				that.destory(); //删除了一行 branch develop100_1分支
 			}).delegate(".window_closeBtn", "click", function() {
 				that.fire("close");
+				//that.fire("close");
 				that.destory();
 			});
 
@@ -122,6 +127,9 @@ define(['widget', 'jquery', 'jquery_ui'], function(widget, $, $ui) {
 			$.extend(this.cfg, cfg, {winType:'confirm'});
 			this.render();
 			return this;
+		},
+		develop100: function(cfg) {
+			//这里是branch develop100 添加的代码
 		}
 
 	});
